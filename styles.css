@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Futura', sans-serif;
+    background-color: white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    background-color: #753BFF;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 100px); /* 50px margin on each side */
+    height: calc(100% - 100px); /* 50px margin on top and bottom */
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 20px; /* 20px margin on top and left */
+}
+
+h1 {
+    font-size: clamp(2.5rem, 8vw, 206px); /* Gradually decrease the font size */
+    margin-bottom: 20px;
+    white-space: nowrap; /* Prevent line break */
+}
+
+main p {
+    font-size: 2em;
+    line-height: 1.2;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.highlight-box {
+    background-color: white;
+    color: #753BFF;
+    padding: 0 10px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.store-buttons {
+    margin: 20px 0;
+}
+
+.store-buttons a {
+    margin: 0 10px;
+}
+
+.store-buttons img {
+    width: 200px;
+}
+
+.footer-text {
+    font-size: 1.5em;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main p {
+        font-size: 1.5em;
+    }
+
+    .store-buttons img {
+        width: 150px;
+    }
+
+    .footer-text {
+        font-size: 1.2em;
+    }
+
+    .container {
+        width: calc(100% - 40px); /* 20px margin on each side for small screens */
+        height: calc(100% - 40px); /* 20px margin on top and bottom for small screens */
+        margin: 20px;
+    }
+
+    .logo {
+        margin: 10px; /* 10px margin on top and left for small screens */
+    }
+}
