@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Otobüs Go</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        function changeLanguage() {
+            const language = document.getElementById('language-select').value;
+            const texts = {
+                'tr': 'Sorularınız mı var? Bize şu adresten yazın: <a href="mailto:support@otobusgo.com" class="email-link">support@otobusgo.com</a>',
+                'en': 'Got questions? Email us at: <a href="mailto:support@otobusgo.com" class="email-link">support@otobusgo.com</a>',
+                'ru': 'Есть вопросы? Напишите нам на почту: <a href="mailto:support@otobusgo.com" class="email-link">support@otobusgo.com</a>',
+                'de': 'Haben Sie Fragen? Schreiben Sie uns an: <a href="mailto:support@otobusgo.com" class="email-link">support@otobusgo.com</a>'
+            };
+            document.getElementById('support-text').innerHTML = texts[language];
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html"><img src="../assets/logo.png" alt="Logo" class="logo"></a>
+            <select id="language-select" onchange="changeLanguage()" class="language-select">
+                <option value="tr" selected>Türkçe</option>
+                <option value="en">English</option>
+                <option value="ru">Русский</option>
+                <option value="de">Deutsch</option>
+            </select>
+        </header>
+        <main>
+            <p id="support-text">Sorularınız mı var? Bize şu adresten yazın: <a href="mailto:support@otobusgo.com" class="email-link">support@otobusgo.com</a></p>
+        </main>
+    </div>
+</body>
+</html>

@@ -108,6 +108,38 @@ footer {
     text-decoration: underline;
 }
 
+/* Styles for the support page */
+.language-select {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #753BFF;
+    background-color: white;
+    color: #753BFF;
+    font-family: 'Futura', sans-serif;
+    font-size: 1em;
+}
+
+.language-select option {
+    background-color: white;
+    color: #753BFF;
+}
+
+.language-select:focus {
+    outline: none;
+    border-color: #9141AC;
+}
+
+.email-link {
+    color: white;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     main p {
